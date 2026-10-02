@@ -1,29 +1,31 @@
-# Welcome to your Lovable project
+# Fatima Baig — Portfolio
 
-This project was built with [Lovable](https://lovable.dev).
+A responsive, editorial-style personal portfolio built with React, TanStack Start, TypeScript, and Tailwind CSS.
 
-## Build with Lovable
+## Local development
 
-Open your project in the [Lovable editor](https://lovable.dev) and keep building.
-
-- **Ship faster**: describe what you want to build and Lovable handles the code.
-- **Stay in sync**: connect the project to GitHub and every change made in Lovable is committed straight to your repository.
-- **Full ownership**: this code is yours. Push to your repository and your changes sync back into Lovable, ready for your next prompt.
-
-## Development
-
-Prefer working locally? You need Node.js and npm — [install with nvm](https://github.com/nvm-sh/nvm#installing-and-updating).
+Requires a recent Node.js version and either Bun or npm.
 
 ```sh
-git clone <this-repository-url>
-cd <repository-name>
-npm i
-npm run dev
+bun install
+bun run dev
 ```
 
-## Built with
+Open the local URL shown in the terminal.
 
-- TanStack Start
-- TypeScript
-- React
-- Tailwind CSS
+## Production build
+
+```sh
+bun run build
+bun run preview
+```
+
+With npm, use `npm install`, `npm run dev`, and `npm run build` instead.
+
+## Editing portfolio content
+
+The homepage content is in `src/routes/index.tsx`; visual tokens and responsive styling are in `src/styles.css`. Replace the clearly labeled certification and resume placeholders only with verified details and files.
+
+## GitHub Pages
+
+TanStack Start can produce server-rendered output, while GitHub Pages serves static files only. Before deploying there, configure a fully static export/build and set Vite’s base path to the repository name when using a project site (for example `/portfolio/`). Also ensure client-side route fallback behavior is not required. For the default build, use a host that supports TanStack Start’s generated server output.
