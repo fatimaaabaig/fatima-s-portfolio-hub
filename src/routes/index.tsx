@@ -158,7 +158,7 @@ function Portfolio() {
       <section id="top" className="hero-section" aria-labelledby="hero-title">
         <div className="hero-kicker reveal">
           <span>Software engineering</span>
-          <span>Mumbai, India</span>
+          <span>Portfolio · 2026</span>
         </div>
         <div className="hero-grid">
           <div className="hero-copy reveal">
